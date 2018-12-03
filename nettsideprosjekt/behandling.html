@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="nettside.css">
+    <style media="screen">
+    .main{
+      display:grid;
+      grid-template-columns: 1fr 2fr 1fr;
+      grid-auto-rows:minmax(100px, auto);
+      justify-items: stretch;
+      align-items: stretch;
+      }
+    .main > div{
+      background:white;
+    }
+    .main > div:nth-child(odd){
+      background:lightgrey;
+    }
+    .box1{
+      /*align-self: start;*/
+      grid-column:1;
+      grid-row: 2/6;
+    }
+    .box2{
+      /*align-self: end;*/
+      grid-column: 2;
+      grid-row:2/5;
+        border:1px solid black;
+    }
+    .box3{
+      /*justify-self: end;*/
+      grid-column: 3;
+      grid-row: 2/6;
+    }
+
+    .footer{
+      display:grid;
+      grid-template-columns: 1fr 2fr 1fr;
+      grid-auto-rows:minmax(100px, auto);
+      grid-gap:0;
+      justify-items: stretch;
+      align-items: stretch;
+      }
+    .footer > div{
+      background:white;
+      padding:1em;
+      }
+    .box4{
+      grid-column:1/4;
+      grid-row: 2/4;
+    }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!--menybar med dropdown lenker-->
+     <ul>
+      <h1>LAKKBAR</h1>
+       <li><a href="booktime.html">Book time</a></li>
+        <li class="dropdown">
+        <a href="omoss.html" class="dropbtn">Om oss</a>
+        <div class="dropdown-content">
+        <a href="kontaktoss.html">Kontakt oss</a>
+        <li class="dropdown">
+        <a href="behandling.html" class="dropbtn">Behandling</a>
+        <div class="dropdown-content">
+        <a href="manikyr.html">Manikyr</a>
+        <a href="pedikyr.html">Pedikyr</a>
+       <li><a href="hovedside.html">Hjem</a></li>
+       </div>
+      </li>
+     </ul>
+    </header>
+    <!--Header slutter-->
+
+
+  <main>
+    <div class="main">
+    <div class="box box1">TEKST</div>
+      <div class="box box2">BILDE</div>
+      <div class="box box3">TEKST</div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer">
+    <div class="box box4">TEKST</div>
+    </div>
+
+
+  </footer>
+  </body>
+</html>
