@@ -1,0 +1,131 @@
+{
+  "Varer" : {
+    "Kaker" : {
+      "K001" : {
+        "Navn" : "Sjokoladekake",
+        "Pris" : 350,
+        "Bilde": "sjokolade.jpg",
+        "Type" : "Bursdag"
+      },
+      "K002" : {
+        "Navn" : "Marsipankake",
+        "Pris" : 400,
+        "Bilde": "marsipankake.jpg",
+        "Type" : "Konfirmasjon"
+      },
+      "K003" : {
+          "Navn" : "Brownies",
+          "Pris" : 150,
+          "Bilde": "brownies.jpg",
+          "Type" : "Bursdag"
+      },
+      "K004" : {
+          "Navn" : "Gulrotkake",
+          "Pris" : 300,
+          "Bilde": "gulrotkake.jpg",
+          "Type" : "Konfirmasjon"
+      },
+      "K005" : {
+          "Navn" : "Oreokake",
+          "Pris" : 400,
+          "Bilde": "oreokake.jpg",
+          "Type" : "Konfirmasjon"
+      },
+      "k006" : {
+          "Navn" : "Bløtkake",
+          "Pris" : 450,
+          "Bilde": "bløtkake.jpg",
+          "Type" : "Bryllup"
+      },
+      "K007" : {
+          "Navn" : "Verdens Beste",
+          "Pris" : 400,
+          "Bilde": "verdensbeste.jpg",
+          "Type" : "Bryllup"
+      },
+      "K008" : {
+          "Navn" : "Ostekake",
+          "Pris" : 450,
+          "Bilde": "ostekake.jpg",
+          "Type" : "Bryllup"
+      },
+      "K009" : {
+          "Navn" : "Kvikklunsjkake",
+          "Pris" : 400,
+          "Bilde": "kvikklunsjkake.jpg",
+          "Type" : "Bursdag"
+      },
+      "K010" : {
+        "Navn" : "Snickerskake",
+        "Pris" : 450,
+        "Bilde": "snickers.jpg",
+        "Type" : "Bursdag"
+      }
+    },
+    "Boller" : {
+      "B001" : {
+        "Navn" : "Hvetebolle",
+        "Pris" : 100,
+        "Bilde": "hvetebolle.jpg",
+        "Type" : "Gluten"
+
+      },
+      "B002" : {
+          "Navn" : "Kanelbolle",
+          "Pris" : 150,
+          "Bilde": "kanel.jpg",
+          "Type" : "Gluten"
+      },
+      "B003" : {
+          "Navn" : "Kokosbolle",
+          "Pris" : 200,
+          "Bilde": "kokos.jpg",
+          "Type" : "Gluten"
+      },
+      "B004" : {
+          "Navn" : "Glutenfribolle",
+          "Pris" : 150,
+          "Bilde": "glutenfribolle.jpg",
+          "Type" : "Glutenfri"
+      },
+      "B005" : {
+          "Navn" : "Berlinerbolle",
+          "Pris" : 100,
+          "Bilde": "berliner.jpg",
+          "Type" : "Gluten"
+      },
+      "B006" : {
+          "Navn" : "Skolebolle",
+          "Pris" : 200,
+          "Bilde": "skoleboller.jpg",
+          "Type": "Gluten"
+        }
+      },
+      "Brød": {
+      "BR001":{
+          "Navn" : "Havrebrød",
+          "Pris" : 90,
+          "Bilde": "havrebrød.jpg",
+          "Type" : "Gluten"
+      },
+      "BR002" : {
+        "Navn" : "Glutenfrittbrød",
+        "Pris" : 50,
+        "Bilde": "glutenfribrød.jpg",
+        "Type" : "Glutenfri"
+      },
+      "BR003" : {
+          "Navn" : "Grovtbrød",
+          "Pris" : 90,
+          "Bilde": "grovtbrød.jpg",
+          "Type" : "Gluten"
+      },
+      "BR004" : {
+          "Navn" : "Focaccia",
+          "Pris" : 120,
+          "Bilde": "focaccia.jpg",
+          "Type" : "Gluten"
+          }
+        }
+      }
+    }
