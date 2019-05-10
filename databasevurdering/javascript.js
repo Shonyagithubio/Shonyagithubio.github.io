@@ -10,7 +10,9 @@ const brød = db.ref("Varer/Brød");
 
 // Javascript-funksjon for å generere HTML-kode for varer
 function genererHTML(snapshot){
+  let key = snapshot.key;
   let varer = snapshot.val();
+  let parent= snapshot.ref.parent.key;
   console.log(varer);
   main.innerHTML +=`
       <article class="Varer">
@@ -18,6 +20,7 @@ function genererHTML(snapshot){
         <img src="bilder/${varer.Bilde}" alt="">
         <p>Pris: ${varer.Pris}</p>
         <p>Type: ${varer.Type}</p>
+        <a href= "valgtVare.html?key=${key}&parent=${parent}">Les mer</a>
       </article>
   `;
 }
@@ -38,6 +41,7 @@ function visBursdag(){
   kaker.orderByChild("Type").equalTo("Bursdag").on("child_added", genererHTML);
 }
 function visKonfirmasjon(){
+  console.log("visKonfirmasjon");
   main.innerHTML = ``;
   kaker.orderByChild("Type").equalTo("Konfirmasjon").on("child_added", genererHTML);
 }
@@ -45,9 +49,21 @@ function visBryllup(){
   main.innerHTML = ``;
   kaker.orderByChild("Type").equalTo("Bryllup").on("child_added", genererHTML);
 }
+function visKakerPris(){
+  main.innerHTML = ``;
+  kaker.orderByChild("Pris").on("child_added", genererHTML);
+}
 function visBoller(){
   main.innerHTML = ``;
   boller.orderByChild("Navn").on("child_added", genererHTML);
+}
+function visBollerPris(){
+  main.innerHTML = ``;
+  boller.orderByChild("Pris").on("child_added", genererHTML);
+}
+function visGlutenfriBoller(){
+  main.innerHTML = ``;
+  boller.orderByChild("Type").equalTo("Glutenfri").on("child_added", genererHTML);
 }
 function visGlutenfri(){
   main.innerHTML = ``;
@@ -57,4 +73,8 @@ function visGlutenfri(){
 function visBrød(){
   main.innerHTML = ``;
   brød.orderByChild("Navn").on("child_added", genererHTML);
+}
+function visBrødPris(){
+  main.innerHTML = ``;
+  brød.orderByChild("Pris").on("child_added", genererHTML);
 }

@@ -2,8 +2,10 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="nettside.css">
+    <link rel="stylesheet" href="style.css">
     <title></title>
+    <style media="screen">
+    </style>
     <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
   <script>
     // Initialize Firebase
@@ -20,25 +22,39 @@
   </head>
   <body>
     <header>
-     <nav>
-       <ul>
-        <h1>Bakeri</h1>
-         <li><a href="Glutenfri.html">Glutenfri</a></li>
-          <li class="dropdown"</li>
-           <a href="allevarer.html" class="dropbtn">Allevarer</a>
-            <div class="dropdown-content">
-             <a href="kaker.html">Kaker</a>
-             <a href="boller.html">Boller</a>
-             <a href="brød.html">Brød</a>
-         <li class="dropdown"</li>
-         <a href="kaker.html" class="dropbtn">Kaker</a>
-          <div class="dropdown-content"</div>
-           <a href="bursdag.html">Bursdag</a>
-           <a href="konfirmasjon.html">Konfirmasjon</a>
-           <a href="bryllup.html">Bryllup</a>
-         <li><a href="hovedside.html">Hjem</a></li>
-       </ul>
-     </nav>
+      <div class="container">
+        <nav>
+          <input type="checkbox" id="nav" class="hidden">
+          <label for="nav" class="nav-btn">
+            <i></i>
+            <i></i>
+            <i></i>
+          </label>
+          <div class="logo">
+            <a href="#">SR KONDITORI&BAKERI</a>
+          </div>
+          <div class="nav-wrapper">
+            <ul>
+              <li><a href="hovedside.html">Hjem</a></li>
+              <li><a href="allevarer.html">Alle Varer</a></li>
+              <li><a href="kaker.html">Kaker</a></li>
+              <li><a href="boller.html">Boller</a></li>
+              <li><a href="brød.html">Brød</a></li>
+              <li><a href="glutenfri.html">Glutenfri</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+     <section class="knapper">
+       <button onclick="visKaker()">Alle kaker</button>
+       <button onclick="visKakerPris()">Pris lav-høy</button>
+       <button onclick="visBursdag()">Bursdagskaker</button>
+       <button onclick="visBryllup()">Bryllupskaker</button>
+       <button onclick="visKonfirmasjon()">Konfirmasjonskaker</button>
+     </section>
+
+
     </header>
 
     <main>
@@ -48,8 +64,18 @@
     <script src="javascript.js" charset="utf-8"></script>
      <script>
 
-       visKaker(); // Funksjon som kjøres når siden lastes
+      visKaker(); // Funksjon som kjøres når siden laster
+
 
      </script>
+
+     <footer>
+       <h4>Kontakt info:</h4>
+       <h4>SRbakeriogkonditori@gmail.com</h4>
+       <h4>+4745122510</h4>
+       <h4>Elias Smiths vei 4, 1337 Sandvika</h4>
+       <p1>Designed by Shonya Rohan</p1>
+     </footer>
+
   </body>
 </html>
